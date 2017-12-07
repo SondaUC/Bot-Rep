@@ -12,7 +12,7 @@ def hello():
     return """Funciona :D"""
 
 
-@app.route('/telegram', methods=['POST'])
+@app.route('/tele', methods=['POST'])
 def telegram():
     print("Entra desde telegram")
     a = request.data
