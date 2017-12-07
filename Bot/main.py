@@ -29,7 +29,7 @@ def telegram():
 
     form = {'chat_id': b["message"]["chat"]["id"], 'text': text}
     header = {'content-Type': 'application/json'}  # el header define el tipo de contenido
-    r = requests.post('https://api.telegram.org/bot402191911:AAFH1X4HxsZny4eVvp3_vLxiSzQe2McsIdU/sendMessage',
+    r = requests.post('https://api.telegram.org/bot495424347:AAGM7XlCXne39odbh-aS95MyuBlkFpWBkuI/sendMessage',
                       headers=header, data=json.dumps(form))
 
     return "Cualquier Cosa"
