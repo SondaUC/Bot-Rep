@@ -27,17 +27,17 @@ def telegram():
         text = "El programa recibio que tiene un problema"
         print("cambia el texto")
 
-        if b["message"]["text"][0:5] == "Start":
-            text = """Hola!
+    if b["message"]["text"][0:5] == "Start":
+        text = """Hola!
 
 Soy SondaBot, en que te puedo ayudar?"""
-            print("cambia el texto")
+        print("cambia el texto")
 
-        if b["message"]["text"][0:48]  == "Tengo un error en mi proceso de calculo de cuota":
-            text = "Su problema se ha registrado, para completar el proceso ingrese su usuario"
+    if b["message"]["text"][0:48]  == "Tengo un error en mi proceso de calculo de cuota":
+        text = "Su problema se ha registrado, para completar el proceso ingrese su usuario"
 
-        if b["message"]["text"][0:21] == "Paola Cabezas Pizarro":
-            text = """Posiblemente, su problema sea de un registro duplicado. De todas maneras,
+    if b["message"]["text"][0:21] == "Paola Cabezas Pizarro":
+        text = """Posiblemente, su problema sea de un registro duplicado. De todas maneras,
 la orden de servicio ya se ha presentado a nuestro equipo, y estamos trabajando en ella ahora mismo"""
 
     form = {'chat_id': b["message"]["chat"]["id"], 'text': text}
