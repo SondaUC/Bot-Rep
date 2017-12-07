@@ -19,7 +19,7 @@ def telegram():
     mensaje = b["message"]["text"]
     text = ""
 
-    if b["message"]["text"][0:4] == "Tengo un problema":
+    if b["message"]["text"][0:17] == "Tengo un problema":
         text = "El programa recibio que tiene un problema"
 
     form = {'chat_id': b["message"]["chat"]["id"], 'text': text}
