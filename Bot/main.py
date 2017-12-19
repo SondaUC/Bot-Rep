@@ -30,11 +30,11 @@ def telegram():
     if b["message"]["text"][0:5] == "Hola!":
         text = """Hola!
 
-Soy SondaBot, Me indica su nombre porfavor?"""
+Soy SondaBot, Me indica su nombre por favor?"""
         print("cambia el texto")
 
     if b["message"]["text"][0:10]  == "Juan Perez":
-        text = "Me indica su nombre de contrato porfavor?"
+        text = "Me indica su nombre de contrato por favor?"
 
     if b["message"]["text"][0:20] == "DSF_SISTEMAS TRADING":
         text = "Cual es su consulta?"
