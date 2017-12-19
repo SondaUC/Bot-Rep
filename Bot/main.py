@@ -27,11 +27,30 @@ def telegram():
         text = "El programa recibio que tiene un problema"
         print("cambia el texto")
 
-    if b["message"]["text"][0:5] == "Start":
+    if b["message"]["text"][0:5] == "Hola!":
         text = """Hola!
 
-Soy SondaBot, en que te puedo ayudar?"""
+Soy SondaBot, Me indica su nombre porfavor?"""
         print("cambia el texto")
+
+    if b["message"]["text"][0:10]  == "Juan Perez":
+        text = "Me indica su nombre de contrato porfavor?"
+
+    if b["message"]["text"][0:20] == "DSF_SISTEMAS TRADING":
+        text = "Cual es su consulta?"
+
+    if b["message"]["text"][0:40] == "No me actualizan mis datos en el sistema":
+        text = "Me puede enviar una captura de pantalla al corredo OS@Sonda.cl, e ingresar enviado cuando se haya logrado"
+
+    if b["message"]["text"][0:7] == "enviado":
+        text = """Confirmo recepción
+
+Me da un numero de contacto?"""
+
+    if b["message"]["text"][0:12] == "+56991827364":
+        text = """para seguimiento, su numero de OS creada es 45627, lo solucionaremos a la brevedad.
+
+Muchas Gracias"""
 
     if b["message"]["text"][0:48]  == "Tengo un error en mi proceso de calculo de cuota":
         text = "Su problema se ha registrado, para completar el proceso ingrese su usuario:"
